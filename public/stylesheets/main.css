@@ -5,8 +5,10 @@ body {
     color: #ffffff;
     padding-top: 50px;
     background: url("/assets/images/wood.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .starter-template {
     padding: 40px 15px;
