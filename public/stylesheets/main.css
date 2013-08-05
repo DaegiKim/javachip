@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 .starter-template {
     padding: 40px 15px;
