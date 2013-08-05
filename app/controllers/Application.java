@@ -1,9 +1,7 @@
 package controllers;
 
-import play.*;
 import play.mvc.*;
-
-import views.html.*;
+import views.html.home.index;
 
 public class Application extends Controller {
     public static Result index() {
