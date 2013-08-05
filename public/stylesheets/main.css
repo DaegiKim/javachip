@@ -15,9 +15,21 @@ body {
     text-align: center;
 }
 
+/*#footer {*/
+    /*float:left;*/
+    /*text-align: center;*/
+    /*padding:15px 0;*/
+    /*min-width:100%;*/
+/*}*/
+
 #footer {
-    float:left;
+    font-size: 12px;
     text-align: center;
-    padding:15px 0;
-    min-width:100%;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.5;
 }
