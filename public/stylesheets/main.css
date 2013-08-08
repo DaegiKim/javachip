@@ -33,3 +33,7 @@ body {
     color: #fff;
     opacity: 0.5;
 }
+
+.thumbnail.thumb-photo{
+    background-color: transparent;
+}
