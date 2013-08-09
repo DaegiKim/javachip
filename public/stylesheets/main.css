@@ -2,10 +2,10 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.428571429;
-    color: #ffffff;
+    color: #fff;
     padding-top: 50px;
     background: url("/assets/images/wood.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: top center;
     background-attachment: fixed;
     /*background-size: cover;*/
@@ -14,13 +14,6 @@ body {
     padding: 40px 15px;
     text-align: center;
 }
-
-/*#footer {*/
-    /*float:left;*/
-    /*text-align: center;*/
-    /*padding:15px 0;*/
-    /*min-width:100%;*/
-/*}*/
 
 #footer {
     font-size: 12px;
@@ -32,9 +25,17 @@ body {
     background-color: #000;
     color: #fff;
     opacity: 0.5;
-    z-index: 1000;
+    z-index: 1030;
 }
 
 .thumbnail.thumb-photo{
     background-color: transparent;
+}
+
+div.row.favorite{
+    margin-top: 2em
+}
+
+div.row.favorite div{
+    /*background-color: rgba(0,0,0,0.5);*/
 }
