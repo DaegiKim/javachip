@@ -39,3 +39,7 @@ div.row.favorite{
 div.row.favorite div{
     /*background-color: rgba(0,0,0,0.5);*/
 }
+
+p.edu-univ-toggle-p{
+    display: none;
+}
