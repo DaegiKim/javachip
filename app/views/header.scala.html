@@ -1,34 +1,34 @@
 @(title: String)
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="@routes.Application.index">
-                <img src="@routes.Assets.at("images/javachip-white.png")" style="width: 16px;" alt="javachip-coffee">
-                Javachip
-            </a>
-            <div class="nav-collapse collapse">
-                <ul class="nav navbar-nav">
-                    @if(title=="home") {
-                        <li class="active"><a href="@routes.Application.index">Home</a></li>
-                        <li><a href="@routes.About.index">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    }
-                    @if(title=="about"){
-                        <li><a href="@routes.Application.index">Home</a></li>
-                        <li class="active"><a href="@routes.About.index">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    }
-                    @if(title=="contact"){
-                        <li><a href="@routes.Application.index">Home</a></li>
-                        <li><a href="@routes.About.index">About</a></li>
-                        <li class="active"><a href="#contact">Contact</a></li>
-                    }
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </div><!-- /.navbar -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="@routes.Application.index">
+                    <img src="@routes.Assets.at("images/javachip-white.png")" style="width: 16px;" alt="javachip-coffee">
+                    Javachip
+                </a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @if(title=="home") {
+                            <li class="active"><a href="@routes.Application.index">Home</a></li>
+                            <li><a href="@routes.About.index">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        }
+                        @if(title=="about"){
+                            <li><a href="@routes.Application.index">Home</a></li>
+                            <li class="active"><a href="@routes.About.index">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        }
+                        @if(title=="contact"){
+                            <li><a href="@routes.Application.index">Home</a></li>
+                            <li><a href="@routes.About.index">About</a></li>
+                            <li class="active"><a href="#contact">Contact</a></li>
+                        }
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div><!-- /.navbar -->
