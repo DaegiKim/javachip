@@ -3,7 +3,8 @@ body {
     font-size: 14px;
     line-height: 1.428571429;
     color: #fff;
-    padding-top: 50px;
+    padding-top: 50px;   /* Account for fixed navbar */
+    position: relative; /* For scrollyspy */
     background: url("/assets/images/wood-low-q.jpg");
     background-repeat: repeat;
     background-position: top center;
