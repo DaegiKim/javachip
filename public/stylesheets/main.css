@@ -27,6 +27,10 @@ body {
     z-index: 1030;
 }
 
+.thumbnail.thumb-photo{
+    background-color: transparent;
+}
+
 div.row.favorite{
     margin-top: 2em
 }
@@ -36,7 +40,7 @@ div.row.favorite div{
 }
 
 div.about-me-wrapper {
-    margin-bottom: 50em;
+    margin-bottom: 5em;
 }
 
 p.edu-univ-toggle-p, #edu-univ-toggle-confirm{
