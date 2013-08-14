@@ -4,7 +4,7 @@ body {
     line-height: 1.428571429;
     color: #fff;
     padding-top: 50px;
-    background: url("/assets/images/wood.jpg");
+    background: url("/assets/images/wood-low-q.jpg");
     background-repeat: repeat;
     background-position: top center;
     background-attachment: fixed;
@@ -23,13 +23,8 @@ body {
     bottom:0px;
     width:100%;
     background-color: #000;
-    color: #fff;
     opacity: 0.5;
     z-index: 1030;
-}
-
-.thumbnail.thumb-photo{
-    background-color: transparent;
 }
 
 div.row.favorite{
@@ -38,6 +33,10 @@ div.row.favorite{
 
 div.row.favorite div{
     /*background-color: rgba(0,0,0,0.5);*/
+}
+
+div.about-me-wrapper {
+    margin-bottom: 50em;
 }
 
 p.edu-univ-toggle-p, #edu-univ-toggle-confirm{

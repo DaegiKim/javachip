@@ -4,15 +4,14 @@
             <div class="starter-template">
                 <img src="@routes.Assets.at("images/DaegiKim.jpg")" style="width: 100%" alt="워싱턴 DC의 네셔널지오그래픽 박물관에서...">
                 <!-- BEGIN About me -->
-                <div style="text-align:left">
+                <div style="text-align:left" class="about-me-wrapper">
                     <h2 style="color: lightseagreen">About me</h2>
                     <p>This is Daegi Kim. I'm from south korea. I'm 22 years old. I'm undergraduate student at Inha University, Incheon, Korea.</p>
-                    <p>My hobby is take a photo, fishing, and coding! Most of the time I write code.</p>
                 </div>
                 <!-- END About me -->
 
                 <!-- BEGIN Education -->
-                <div style="text-align:left">
+                <div style="text-align:left" class="about-me-wrapper">
                     <h2 style="color: crimson">Education</h2>
                     <!-- BEGIN High school -->
                     <div class="media">
@@ -124,7 +123,7 @@
                 <!-- END Education -->
 
                 <!-- BEGIN Skills -->
-                <div>
+                <div class="about-me-wrapper">
                     <h2 style="text-align:left; color: chartreuse">Skills</h2>
                     <div class="row">
                         <div class="col-lg-2">
@@ -170,29 +169,36 @@
                 </div>
                 <!-- END Skills -->
 
+                <!-- BEGIN Interested in  -->
+                <div class="about-me-wrapper">
+                    <h2 style="text-align:left; color: dodgerblue">Interested in</h2>
+                    <p style="text-align: left">Hadoop, OpenCV, Bootstrap, Play! Framework, MongoDB, Cassandra, Lucene, Mahout, Amazon Web Services, git, Heroku</p>
+                </div>
+                <!-- END Interested in -->
+
                 <!-- BEGIN More about me -->
-                <div>
+                <div class="about-me-wrapper">
                     <h2 style="text-align:left; color: darkorange">If you want more about me</h2>
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-3 col-md-3">
                             <a href="http://q.cyworld.com/42183254">
                                 <img src="@routes.Assets.at("images/cyworld.png")" style="max-width: 128px" alt="cyworld" class="grayscale">
                             </a>
                             <p>싸이월드, 학창 시절의 추억이 담겨져 있습니다. 요즘은 안해요.</p>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-3 col-md-3">
                             <a href="https://www.facebook.com/DaegiKimmm">
                                 <img src="@routes.Assets.at("images/facebook.png")" style="max-width: 128px" alt="facebook" class="grayscale">
                             </a>
                             <p>페이스북, 지금 가장 활발히 사용하는 소셜 네트워크 서비스.</p>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-3 col-md-3">
                             <a href="http://instance-of.com/">
                                 <img src="@routes.Assets.at("images/wordpress.png")" style="max-width: 128px" alt="wordpress" class="grayscale">
                             </a>
                             <p>워드프레스, 프로그래밍 기술을 공유하는 블로그.</p>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-3 col-md-3">
                             <a href="https://github.com/DaegiKim">
                                 <img src="@routes.Assets.at("images/github.png")" style="max-width: 128px" alt="github" class="grayscale">
                             </a>
@@ -202,46 +208,44 @@
                 </div>
                 <!-- END More about me -->
 
-                @*<div class="row favorite">*@
-                    @*<div class="col-lg-4">*@
-                        @*<h3>My favorite animal is...</h3>*@
-                        @*<h2>pug!</h2>*@
-                        @*<img src="@routes.Assets.at("images/blackpug.jpg")" class="img-rounded" style="width: 100%">*@
-                        @*<h5>(Especially black pug)</h5>*@
-                    @*</div>*@
-                    @*<div class="col-lg-4">*@
-                        @*<h3>My favorite food is...</h3>*@
-                        @*<h2>chicken!</h2>*@
-                        @*<img src="@routes.Assets.at("images/chicken.jpg")" class="img-rounded" style="width: 100%">*@
-                        @*<h5>(Especially fried & spicy chicken)</h5>*@
-                    @*</div>*@
-                    @*<div class="col-lg-4">*@
-                        @*<h3>My favorite character is...</h3>*@
-                        @*<h2>woody!</h2>*@
-                        @*<img src="@routes.Assets.at("images/woody.jpg")" class="img-rounded" style="width: 100%">*@
-                        @*<h5>(Yes, It's me.)</h5>*@
-                    @*</div>*@
-                @*</div>*@
-
                 <!-- BEGIN Timeline Embed -->
-                <div id="timeline-embed"></div>
-                <script type="text/javascript">
-                var timeline_config = {
-                width:              '100%',
-                height:             '600',
-                source:             'https://docs.google.com/spreadsheet/pub?key=0Art3h7muCuo5dDY0RGE2QmxLTE9ITkZjRDM1cnZxbUE&output=html',
-                css:                '@routes.Assets.at("timelinejs/css/timeline.css")',
-                js:                 '@routes.Assets.at("timelinejs/js/timeline-min.js")'
-                }
-                </script>
-                <script type="text/javascript" src="@routes.Assets.at("timelinejs/js/storyjs-embed.js")"></script>
+                <div class="about-me-wrapper">
+                    <div id="timeline-embed"></div>
+                    <script type="text/javascript">
+                    var timeline_config = {
+                    width:              '100%',
+                    height:             '600',
+                    source:             'https://docs.google.com/spreadsheet/pub?key=0Art3h7muCuo5dDY0RGE2QmxLTE9ITkZjRDM1cnZxbUE&output=html',
+                    css:                '@routes.Assets.at("timelinejs/css/timeline.css")',
+                    js:                 '@routes.Assets.at("timelinejs/js/timeline-min.js")'
+                    }
+                    </script>
+                    <script type="text/javascript" src="@routes.Assets.at("timelinejs/js/storyjs-embed.js")"></script>
+                </div>
                 <!-- END Timeline Embed-->
 
                 <!-- BEGIN Quotations -->
-                <div style="margin-top: 30em; margin-bottom: 30em">
-                    Why be a man when you can be a success?
+                <div class="about-me-wrapper">
+                    <p>Why be a man when you can be a success?</p>
+                    <small>-Bertolt Brecht-</small>
                 </div>
                 <!-- END Quotations-->
+
+                <div style="background-color: darkorange">
+                    darkorange (#FF8C00)
+                </div>
+                <div style="background-color: lightseagreen">
+                    lightseagreen (#20B2AA)
+                </div>
+                <div style="background-color: crimson">
+                    crimson (#DC143C)
+                </div>
+                <div style="background-color: chartreuse">
+                    chartreuse (#7FFF00)
+                </div>
+                <div style="background-color: dodgerblue">
+                    dodgerblue (#1E90FF)
+                </div>
             </div>
         </div><!-- /.container -->
 
