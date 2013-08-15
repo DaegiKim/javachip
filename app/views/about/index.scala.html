@@ -4,15 +4,23 @@
             <div class="starter-template">
                 <img src="@routes.Assets.at("images/DaegiKim.jpg")" style="width: 100%" alt="워싱턴 DC의 네셔널지오그래픽 박물관에서...">
                 <!-- BEGIN About me -->
-                <div style="text-align:left" class="about-me-wrapper">
-                    <h2 style="color: lightseagreen">About me</h2>
-                    <p>This is Daegi Kim. I'm from south korea. I'm 22 years old. I'm undergraduate student at Inha University, Incheon, Korea.</p>
+                <div class="about-me-wrapper text-left">
+                    <h2 class="lightseagreen-f">About me</h2>
+                    @*<p>This is Daegi Kim. I'm from south korea. I'm 22 years old. I'm undergraduate student at Inha University, Incheon, Korea.</p>*@
+<pre class="pre-javachip">
+public static final <span class="lightseagreen-f">DaegiKim</span> {
+    age:        "22",
+    origin:     "south korea",
+    job:        "student",
+    major:      "computer science"
+}
+</pre>
                 </div>
                 <!-- END About me -->
 
                 <!-- BEGIN Education -->
-                <div style="text-align:left" class="about-me-wrapper">
-                    <h2 style="color: crimson">Education</h2>
+                <div class="about-me-wrapper text-left">
+                    <h2 class="crimson-f">Education</h2>
                     <!-- BEGIN High school -->
                     <div class="media">
                         <a class="pull-left">
@@ -124,17 +132,7 @@
 
                 <!-- BEGIN Skills -->
                 <div class="about-me-wrapper">
-                    <h2 style="text-align:left; color: chartreuse">Skills</h2>
-                    <div class="row">
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                            Java
-                        </div>
-                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-info" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="chartreuse-f text-left">Skills</h2>
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             HTML/CSS
@@ -147,11 +145,21 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            Java
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" style="width: 41%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                             C, C++, C#
                         </div>
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
                             <div class="progress">
-                                <div class="progress-bar progress-bar-danger" style="width: 50%"></div>
+                                <div class="progress-bar progress-bar-danger" style="width: 39%"></div>
                             </div>
                         </div>
                     </div>
@@ -171,14 +179,22 @@
 
                 <!-- BEGIN Interested in  -->
                 <div class="about-me-wrapper">
-                    <h2 style="text-align:left; color: dodgerblue">Interested in</h2>
-                    <p style="text-align: left">Hadoop, OpenCV, Bootstrap, Play! Framework, MongoDB, Cassandra, Lucene, Mahout, Amazon Web Services, git, Heroku</p>
+                    <h2 class="dodgerblue-f text-left">Interested in</h2>
+                    <p class="text-left">
+                        Hadoop, OpenCV,
+                        <span class="dodgerblue-f">Bootstrap</span>,
+                        <span class="chartreuse-f">Play! Framework</span>,
+                        Cassandra, Lucene, Mahout,
+                        <span class="darkorange-f">MongoDB</span>,
+                        Amazon Web Services, git,
+                        <span class="lightseagreen-f">Heroku</span>
+                    </p>
                 </div>
                 <!-- END Interested in -->
 
                 <!-- BEGIN More about me -->
                 <div class="about-me-wrapper">
-                    <h2 style="text-align:left; color: darkorange">If you want more about me</h2>
+                    <h2 class="darkorange-f text-left">If you want more about me</h2>
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <a href="http://q.cyworld.com/42183254">
@@ -231,19 +247,19 @@
                 </div>
                 <!-- END Quotations-->
 
-                <div style="background-color: darkorange">
+                <div class="darkorange-b">
                     <small>darkorange (#FF8C00)</small>
                 </div>
-                <div style="background-color: lightseagreen">
+                <div class="lightseagreen-b">
                     <small>lightseagreen (#20B2AA)</small>
                 </div>
-                <div style="background-color: crimson">
+                <div class="crimson-b">
                     <small>crimson (#DC143C)</small>
                 </div>
-                <div style="background-color: chartreuse">
+                <div class="chartreuse-b">
                     <small>chartreuse (#7FFF00)</small>
                 </div>
-                <div style="background-color: dodgerblue">
+                <div class="dodgerblue-b">
                     <small>dodgerblue (#1E90FF)</small>
                 </div>
             </div>
