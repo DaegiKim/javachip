@@ -16,17 +16,17 @@
                         @if(title=="home") {
                             <li class="active"><a href="@routes.Home.index">Home</a></li>
                             <li><a href="@routes.About.index">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="@routes.Blog.index">Blog</a></li>
                         }
                         @if(title=="about"){
                             <li><a href="@routes.Home.index">Home</a></li>
                             <li class="active"><a href="@routes.About.index">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="@routes.Blog.index">Blog</a></li>
                         }
-                        @if(title=="contact"){
+                        @if(title=="blog"){
                             <li><a href="@routes.Home.index">Home</a></li>
                             <li><a href="@routes.About.index">About</a></li>
-                            <li class="active"><a href="#contact">Contact</a></li>
+                            <li class="active"><a href="@routes.Blog.index">Blog</a></li>
                         }
                     </ul>
                 </div><!--/.nav-collapse -->
